@@ -1,5 +1,5 @@
 {% set name = "wcmatch" %}
-{% set version = "8.0.1" %}
+{% set version = "8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wcmatch-{{ version }}.tar.gz
-  sha256: 00e0aeb50d283c523276e96cb4a94e083289256f72de4e9638affe970867ec3e
+  sha256: 4b2f5758d845d2cb391529f892201916cbb1c2ce10a447c7b7a57a2f4bb5647e
 
 build:
   number: 0
