@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wcmatch-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wcmatch-{{ version }}.tar.gz
   sha256: e72f0de09bba6a04e0de70937b0cf06e55f36f37b3deb422dfaf854b867b840a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling >=0.21.1
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - bracex >=2.1.1
 
 test:
@@ -30,6 +30,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/facelessuser/wcmatch
