@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "10.2"
+  version: "10.2.1"
 
 package:
   name: wcmatch
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/w/wcmatch/wcmatch-${{ version }}.tar.gz
-  sha256: 92204839e3e9c945e1e71d7e1e4edeab2601ed50a5c51ff4f3f97ca711eeb738
+  sha256: ecac70a5c70e62ba854b78318d3a1408e8651f8f1c96e5837743b71aa6a4fb92
 
 build:
   number: 0
@@ -23,8 +23,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - bracex >=2.1.1
-
+    - bracex >=3.0
 tests:
   - python:
       imports:
@@ -32,7 +31,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
 
 about:
   summary: Wildcard/glob file name matcher.
