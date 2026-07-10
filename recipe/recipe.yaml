@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "10.2.1"
+  version: "11.0"
 
 package:
   name: wcmatch
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/w/wcmatch/wcmatch-${{ version }}.tar.gz
-  sha256: ecac70a5c70e62ba854b78318d3a1408e8651f8f1c96e5837743b71aa6a4fb92
+  sha256: 55d95c2447789712774b198ceec72939e88b5618f1f8f0a9b605bf7740b63b96
 
 build:
   number: 0
