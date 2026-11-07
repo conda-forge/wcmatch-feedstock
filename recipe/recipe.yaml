@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: '12.0'
+  version: 12.0.1
 
 package:
   name: wcmatch
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/w/wcmatch/wcmatch-${{ version }}.tar.gz
-  sha256: 80ebfdf510d5fef580c4fc662b9eba76b331cff20d7913fc6e722edcb199cbe6
+  sha256: 4ea6acef75b657bf71ac8fa9520165bf5ae55120c4e655895a5b7d4c69896c5e
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - bracex >=3.2.1
+    - bracex >=3.2.2
 tests:
   - python:
       imports:
